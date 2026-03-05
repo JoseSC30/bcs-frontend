@@ -44,7 +44,7 @@ export default function SolicitudPage() {
 
     return (
         <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
-            <h1 className="text-3xl font-bold text-primary-2 mb-6">Solicitar Tarjeta de Crédito</h1>
+            <h1 className="text-2xl font-bold text-primary-2 mb-6">Solicitud de Tarjeta de Crédito</h1>
 
             {message && (
                 <div className={`p-4 mb-4 rounded ${message.type === 'success'

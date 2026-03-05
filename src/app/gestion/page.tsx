@@ -50,8 +50,8 @@ export default function GestionPage() {
     if (loading) return <div className="text-center p-8 text-black">Cargando solicitudes....</div>;
 
     return (
-        <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl font-bold text-primary-2 mb-6">Gestión de Solicitudes</h1>
+        <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h1 className="text-2xl font-bold text-primary-2 mb-6">Tarjetas Solicitadas</h1>
 
             {solicitudes.length === 0 ? (
                 <div className="text-gray-500">No hay solicitudes pendientes.</div>
@@ -61,8 +61,8 @@ export default function GestionPage() {
                         {solicitudes.map((s) => (
                             <li key={s.id} className="p-4 flex items-center justify-between hover:bg-gray-50 transition-colors">
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-800">{s.nombre}</h3>
-                                    <p className="text-gray-600">Tel: {s.telefono}</p>
+                                    <h3 className="text-lg font-semibold text-gray-800">Cliente: {s.nombre}</h3>
+                                    <p className="text-gray-600">Teléfono: {s.telefono}</p>
                                 </div>
                                 <div className="flex space-x-3">
                                     <button
